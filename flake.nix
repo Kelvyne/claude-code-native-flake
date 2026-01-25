@@ -50,11 +50,13 @@
 
             src = pkgs.fetchurl {
               url = "${baseUrl}/${version}/${info.platform}/claude";
+              name = "claude-${version}-${info.platform}";
               hash = info.hash;
             };
 
             dontUnpack = true;
             dontBuild = true;
+            dontStrip = true;
 
             nativeBuildInputs = pkgs.lib.optionals pkgs.stdenv.isLinux [
               pkgs.autoPatchelfHook

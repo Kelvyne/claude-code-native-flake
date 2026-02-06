@@ -8,26 +8,26 @@
 
   outputs = { self, nixpkgs, flake-utils }:
     let
-      version = "2.1.19";
+      version = "2.1.34";
       baseUrl = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases";
 
       # Platform-specific binary info
       platformInfo = {
         "aarch64-darwin" = {
           platform = "darwin-arm64";
-          hash = "sha256-04asj20UefhdMfNpQhyCQTXBAknDIIcBfQWl9CiFLEE=";
+          hash = "sha256-WL108zqfC+tDOOAvYT9jBk/ac+kiYojRCQnfUKRm7GA=";
         };
         "x86_64-darwin" = {
           platform = "darwin-x64";
-          hash = "sha256-viZrOpUvSD2DWK0UHir+ZhFwOGUG9Hnq2ZIxnk/cOKw=";
+          hash = "sha256-V+CMMngtDj0eOM9pcmH4WBOnENJxlEenV3C9r9xHQMg=";
         };
         "aarch64-linux" = {
           platform = "linux-arm64";
-          hash = "sha256-jEthskynYNb3qi8ZcnFj0SLp/Qw86R8QaiG2kYp7G7s=";
+          hash = "sha256-/7BiWtYJtYFs7fsj+IMl9itjdHq2/f5aU/NS/U7XezM=";
         };
         "x86_64-linux" = {
           platform = "linux-x64";
-          hash = "sha256-Tiocc4cezzsTM3a1fe0DMzp6Y4fy0qOmJ5u5Cgf3qUQ=";
+          hash = "sha256-NmXxL2ehFZsxAF3M4Ryh3kHUl1m649Ae2FOUD+fEoh8=";
         };
       };
 
